@@ -11,7 +11,7 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:rotationX="12"
         android:text="First text view"
@@ -22,7 +22,7 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="247dp">
+        android:layout_height="wrap_content">
 
         <TableRow
             android:layout_width="match_parent"
@@ -72,7 +72,7 @@
     <Switch
         android:id="@+id/switch2"
         android:layout_width="355dp"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Switch night theme"
         android:textAlignment="center"
@@ -106,5 +106,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="send result" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusedMonthDateColor="#9E1313"
+        android:selectedWeekBackgroundColor="#003796" />
 
 </LinearLayout>
