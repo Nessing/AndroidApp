@@ -8,110 +8,122 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView2"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:rotationX="12"
-        android:text="First text view"
-        android:textAlignment="center"
-        android:textColor="#E91E63"
-        android:textSize="20sp"
-        android:textStyle="italic" />
+        android:layout_height="match_parent">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TableRow
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="138dp"
-                android:layout_height="31dp"
-                android:text="Input your name: "
-                android:textAlignment="textEnd"
-                android:textSize="16sp" />
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="253dp"
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="355dp"
                 android:layout_height="wrap_content"
-                android:hint="Name" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="157dp"
-                android:layout_height="31dp"
-                android:text="Do you have a car?"
-                android:textAlignment="textEnd"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Switch night theme"
+                android:textAlignment="center"
+                android:textColor="#4CAF50"
                 android:textSize="16sp" />
 
-            <CheckBox
-                android:id="@+id/checkBox"
-                android:layout_width="166dp"
-                android:layout_height="wrap_content" />
-        </TableRow>
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:fontFamily="cursive"
+                android:text="Start engine"
+                android:textAlignment="center"
+                android:textColor="#8E1A1A"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                android:typeface="sans" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:rotationX="12"
+                android:text="First text view"
+                android:textAlignment="center"
+                android:textColor="#E91E63"
+                android:textSize="20sp"
+                android:textStyle="italic" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <Switch
-        android:id="@+id/switch2"
-        android:layout_width="355dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="Switch night theme"
-        android:textAlignment="center"
-        android:textColor="#4CAF50"
-        android:textSize="16sp" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="match_parent"
-        android:layout_height="46dp"
-        android:fontFamily="cursive"
-        android:text="Start engine"
-        android:textAlignment="center"
-        android:textColor="#8E1A1A"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
-        android:typeface="sans" />
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="138dp"
+                        android:layout_height="31dp"
+                        android:text="Input your name: "
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp" />
 
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#CDDC39"
-        android:rotationX="25"
-        android:text="ToggleButton"
-        android:textOff="Engine stoped"
-        android:textOn="Engine started" />
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="253dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Name" />
+                </TableRow>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="send result" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusedMonthDateColor="#9E1313"
-        android:selectedWeekBackgroundColor="#003796" />
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="157dp"
+                        android:layout_height="31dp"
+                        android:text="Do you have a car?"
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="166dp"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+
+            <ToggleButton
+                android:id="@+id/toggleButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CDDC39"
+                android:rotationX="25"
+                android:text="ToggleButton"
+                android:textOff="Engine stoped"
+                android:textOn="Engine started" />
+
+            <Button
+                android:id="@+id/buttonSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Switch layout" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusedMonthDateColor="#9E1313"
+                android:selectedWeekBackgroundColor="#003796" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
