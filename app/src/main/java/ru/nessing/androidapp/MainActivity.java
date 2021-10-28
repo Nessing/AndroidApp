@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView fieldInput;
     private String out = "";
     private float result;
-    private boolean oneOperation;
+    private boolean oneOperation, negativeNum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fieldInput = findViewById(R.id.fieldInput);
 
         oneOperation = false;
+        negativeNum = false;
 
         Button button = findViewById(R.id.button_1);
         Button button2 = findViewById(R.id.button_2);
@@ -112,49 +113,62 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             fieldInput.setText(out);
 
             // operations
-        } else if (view.getId() == R.id.button_plus) {
-            if (!oneOperation) {
-                out += " + ";
-                fieldInput.setText(out);
-                oneOperation = true;
-            }
-        } else if (view.getId() == R.id.button_minus) {
-            if (!oneOperation) {
-                out += " - ";
-                fieldInput.setText(out);
-                oneOperation = true;
-            }
         } else if (view.getId() == R.id.button_multiply) {
-            if (!oneOperation) {
+            if (!oneOperation && out.length() >= 1 && !negativeNum || !oneOperation && out.length() >= 3 && negativeNum) {
                 out += " * ";
                 fieldInput.setText(out);
                 oneOperation = true;
             }
         } else if (view.getId() == R.id.button_divide) {
-            if (!oneOperation) {
+            if (!oneOperation && out.length() >= 1 && !negativeNum || !oneOperation && out.length() >= 3 && negativeNum) {
                 out += " / ";
                 fieldInput.setText(out);
                 oneOperation = true;
             }
 
-        } else if (view.getId() == R.id.button_equals) {
-            String[] arr = out.split(" ");
-            if (arr[1].equals("+")) {
-                result = Float.parseFloat(arr[0]) + Float.parseFloat(arr[2]);
-            } else if (arr[1].equals("-")) {
-                result = Float.parseFloat(arr[0]) - Float.parseFloat(arr[2]);
-            } else if (arr[1].equals("*")) {
-                result = Float.parseFloat(arr[0]) * Float.parseFloat(arr[2]);
-            } else if (arr[1].equals("/")) {
-                result = Float.parseFloat(arr[0]) / Float.parseFloat(arr[2]);
+        } else if (view.getId() == R.id.button_plus) {
+            if (!oneOperation && out.length() >= 1 && !negativeNum || !oneOperation && out.length() >= 3 && negativeNum) {
+                out += " + ";
+                fieldInput.setText(out);
+                oneOperation = true;
             }
-            fieldInput.setText(String.valueOf(result));
-            out = String.valueOf(result);
-            oneOperation = false;
+        } else if (view.getId() == R.id.button_minus) {
+            if (out.length() <= 1) {
+                out += " -";
+                fieldInput.setText(out);
+                negativeNum = true;
+            }
+            else if (!oneOperation) {
+                out += " - ";
+                fieldInput.setText(out);
+                oneOperation = true;
+            }
+        }
+        else if (view.getId() == R.id.button_equals) {
+            String[] arr = out.trim().split(" ");
+            try {
+                if (arr[1].equals("+")) {
+                    result = Float.parseFloat(arr[0]) + Float.parseFloat(arr[2]);
+                } else if (arr[1].equals("-")) {
+                    result = Float.parseFloat(arr[0]) - Float.parseFloat(arr[2]);
+                } else if (arr[1].equals("*")) {
+                    result = Float.parseFloat(arr[0]) * Float.parseFloat(arr[2]);
+                } else if (arr[1].equals("/")) {
+                    result = Float.parseFloat(arr[0]) / Float.parseFloat(arr[2]);
+                }
+                fieldInput.setText(String.valueOf(result));
+                out = String.valueOf(result);
+                oneOperation = false;
+                negativeNum = false;
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("expression don't right");
+            }
+
         } else if (view.getId() == R.id.button_cancel) {
             out = "";
             fieldInput.setText(out);
             oneOperation = false;
+            negativeNum = false;
         }
     }
 }
