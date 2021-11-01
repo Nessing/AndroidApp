@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_default_button">22sp</dimen>
+    <dimen name="margin_default_button">4dp</dimen>
+    <dimen name="margin_default_TextView">24dp</dimen>
+    <dimen name="text_size_default_textView">40sp</dimen>
+</resources>

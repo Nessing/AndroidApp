@@ -13,4 +13,21 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="MainBackground">
+        <item name="backgroundColor">@color/background_color_default_night</item>
+    </style>
+
+    <style name="StyleInputField">
+        <item name="fontFamily">cursive</item>
+        <item name="android:textStyle">bold</item>
+        <item name="colorPrimary">@color/background_default_button_night</item>
+    </style>
+
+    <style name="StyleButtons" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+        <item name="colorPrimary">@color/background_default_button_night</item>
+    </style>
+
 </resources>
