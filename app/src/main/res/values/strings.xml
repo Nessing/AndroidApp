@@ -18,4 +18,7 @@
     <string name="num_divide">/</string>
     <string name="num_clean">C</string>
     <string name="setting_button">setting</string>
+    <string name="change_style">Change style</string>
+    <string name="info_button_setting">Push on the button for change current of theme</string>
+    <string name="info_current_theme">current theme: light</string>
 </resources>

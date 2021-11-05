@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="setting_button">setting</string>
+    <string name="change_style">Change theme</string>
+    <string name="info_button_setting">push on the button for change current of theme</string>
+    <string name="info_current_theme">current theme: night</string>
 </resources>

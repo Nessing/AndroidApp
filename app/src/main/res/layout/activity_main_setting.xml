@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_color_default"
+    tools:context=".MainActivitySetting"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/StyleInputField"
+        android:textColor="@color/input_field"
+        android:text="@string/info_button_setting"
+        android:textSize="@dimen/text_info_setting"
+        android:gravity="top|center"/>
+
+    <com.google.android.material.circularreveal.CircularRevealLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:theme="@style/StyleButtons">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/set_theme"
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_default_button"
+            android:layout_weight="1"
+            android:text="@string/change_style"
+            android:textSize="@dimen/text_size_setting" />
+
+    </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/StyleInputField"
+        android:textColor="@color/input_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info_current_theme"
+        android:textSize="@dimen/text_info_setting"
+        android:gravity="top|center"/>
+
+</com.google.android.material.circularreveal.CircularRevealLinearLayout>

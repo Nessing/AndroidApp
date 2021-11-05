@@ -1,5 +1,6 @@
 package ru.nessing.androidapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -18,6 +19,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         buttons = new Buttons();
         buttons.create(this);
+
+        findViewById(R.id.open_setting).setOnClickListener(v -> {
+            Intent intent = new Intent(this, MainActivitySetting.class);
+            startActivity(intent);
+        });
     }
 
     @Override
