@@ -72,6 +72,9 @@ public class Calculations {
             this.result = Float.parseFloat(arr[0]) / Float.parseFloat(arr[2]);
         }
         outResult = String.valueOf(result);
+        if (outResult.endsWith(".0")) {
+            outResult = outResult.replace(".0", "");
+        }
         clean();
         return outResult;
     }

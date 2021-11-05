@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color_default">#02675D</color>
+    <color name="background_default_button">#328078</color>
+    <color name="color_text">#1A312F</color>
+    <color name="input_field">#84DF87</color>
+</resources>

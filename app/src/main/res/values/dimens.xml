@@ -4,4 +4,5 @@
     <dimen name="margin_default_button">4dp</dimen>
     <dimen name="margin_default_TextView">24dp</dimen>
     <dimen name="text_size_default_textView">40sp</dimen>
+    <dimen name="text_size_setting">15sp</dimen>
 </resources>
