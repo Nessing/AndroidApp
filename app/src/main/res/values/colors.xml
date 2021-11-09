@@ -7,8 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background_color_default">#154368</color>
-    <color name="background_default_button">#2196F3</color>
-    <color name="background_color_default_night">#05C6B4</color>
-    <color name="background_default_button_night">#2A6C66</color>
+    <color name="background_color_default">#65B4F3</color>
+    <color name="background_default_button">#1F7FCC</color>
+    <color name="color_text">#DCDCDC</color>
+    <color name="input_field">#1A609A</color>
 </resources>

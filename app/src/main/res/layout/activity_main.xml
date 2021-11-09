@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.circularreveal.CircularRevealLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:theme="@style/MainBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_color_default"
+    tools:context=".MainActivity"
     android:orientation="vertical">
+
+    <com.google.android.material.circularreveal.CircularRevealLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_weight="0"
+        android:theme="@style/StyleButtons">
+
+        <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
+            android:id="@+id/open_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_default_button"
+            android:layout_weight="1"
+            android:layout_gravity="start|top"
+            android:text="@string/setting_button"
+            android:textSize="@dimen/text_size_setting" />
+
+    </com.google.android.material.circularreveal.CircularRevealLinearLayout>
 
     <com.google.android.material.textview.MaterialTextView
         style="@style/StyleInputField"
+        android:textColor="@color/input_field"
         android:id="@+id/fieldInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +46,8 @@
         android:layout_weight="1">
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -31,6 +57,8 @@
             android:textSize="@dimen/text_size_default_button" />
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -40,6 +68,8 @@
             android:textSize="@dimen/text_size_default_button" />
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -49,6 +79,8 @@
             android:textSize="@dimen/text_size_default_button" />
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_plus"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -66,6 +98,8 @@
         android:theme="@style/StyleButtons">
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -76,6 +110,8 @@
             android:textSize="@dimen/text_size_default_button" />
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -86,6 +122,8 @@
             android:textSize="@dimen/text_size_default_button" />
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -96,6 +134,8 @@
             android:textSize="@dimen/text_size_default_button" />
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_minus"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -113,6 +153,8 @@
         android:theme="@style/StyleButtons">
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_7"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -123,6 +165,8 @@
             android:textSize="@dimen/text_size_default_button" />
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_8"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -133,6 +177,8 @@
             android:textSize="@dimen/text_size_default_button" />
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_9"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -143,6 +189,8 @@
             android:textSize="@dimen/text_size_default_button" />
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_multiply"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -160,6 +208,8 @@
         android:theme="@style/StyleButtons">
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_decimal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -170,6 +220,8 @@
             android:textSize="@dimen/text_size_default_button" />
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_zero"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -180,6 +232,8 @@
             android:textSize="@dimen/text_size_default_button" />
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_equals"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -190,6 +244,8 @@
             android:textSize="@dimen/text_size_default_button" />
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_divide"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -207,6 +263,8 @@
         android:theme="@style/StyleButtons">
 
         <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/background_default_button"
+            android:textColor="@color/color_text"
             android:id="@+id/button_cancel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -216,5 +274,6 @@
             android:text="@string/num_clean"
             android:textSize="@dimen/text_size_default_button" />
     </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
 
 </com.google.android.material.circularreveal.CircularRevealLinearLayout>
