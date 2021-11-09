@@ -122,8 +122,8 @@ public class Buttons extends AppCompatActivity implements View.OnClickListener {
             }
 
         } else if (view.getId() == R.id.button_cancel) {
-            fieldInput.setText(out);
             out = "";
+            fieldInput.setText(out);
             calculations.clean();
         }
     }
